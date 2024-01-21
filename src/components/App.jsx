@@ -1,4 +1,4 @@
-
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -16,6 +16,7 @@ import Register from './Register/Register';
 import Navigation from './Navigation/Navigation';
 import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
 import { Routes, Route, Navigate } from 'react-router-dom';
+
 
 const App = () => {
   const dispatch = useDispatch();
