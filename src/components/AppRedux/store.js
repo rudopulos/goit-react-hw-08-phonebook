@@ -1,4 +1,4 @@
-// src/AppRedux/store.js
+
 import { configureStore } from '@reduxjs/toolkit';
 import appReducer from './slice';
 

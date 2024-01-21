@@ -1,4 +1,4 @@
-// Login.jsx
+
 import React, { useState } from 'react';
 
 const Login = ({ setIsAuthenticated, setSuccessMessage, setErrorMessage, setUserName, handleAuthentication }) => {
@@ -9,19 +9,15 @@ const Login = ({ setIsAuthenticated, setSuccessMessage, setErrorMessage, setUser
 
     console.log('Attempting login with email:', email);
     console.log('Attempting login with password:', password);
-    // Simulează logica de logare
-    // Aici ar trebui să apelezi o funcție de logare pe server
-    // care verifică datele introduse și returnează rezultatele
-
-    // Verificare simplă: dacă emailul și parola sunt corecte, considerăm autentificarea ca reușită
+   
     if (email === 'user@example.com' && password === 'password') {
       handleAuthentication(true, `Welcome, ${email}!`);
       setUserName(email);
-      setSuccessMessage('Login successful.'); // Adaugă un mesaj de succes
+      setSuccessMessage('Login successful.'); 
     } else {
       handleAuthentication(false, 'Login failed. Please check your credentials.');
       setUserName('');
-      setErrorMessage('Invalid credentials.'); // Adaugă un mesaj de eroare
+      setErrorMessage('Invalid credentials.'); 
     }
   };
 

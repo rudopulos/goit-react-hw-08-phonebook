@@ -1,4 +1,4 @@
-// App.jsx
+
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -29,8 +29,7 @@ const App = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleAuthentication = (isAuthenticated, message) => {
-    // Implementează logica de autentificare aici
-    // Poate actualiza și alte stări în componenta App
+
     setIsAuthenticated(isAuthenticated);
     setSuccessMessage(message);
   };

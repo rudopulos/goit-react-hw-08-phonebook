@@ -1,4 +1,4 @@
-// Register.jsx
+
 import React, { useState } from 'react';
 
 const Register = ({ setSuccessMessage, setErrorMessage }) => {
@@ -6,11 +6,7 @@ const Register = ({ setSuccessMessage, setErrorMessage }) => {
   const [password, setPassword] = useState('');
 
   const handleRegister = () => {
-    // Simulează logica de înregistrare
-    // Aici ar trebui să apelezi o funcție de înregistrare pe server
-    // care adaugă utilizatorul în baza de date
 
-    // Verificare simplă: dacă emailul și parola nu sunt goale, considerăm înregistrarea ca reușită
     if (email && password) {
       setSuccessMessage('Registration successful. Please log in.');
       setErrorMessage('');
